@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<style>
+    .menu {
+            text-align: left;}
+  </style>
+<head>
+  <title th:utext="${title}"></title>
+</head>
+<body>
+
+<th:block th:include="/fragments/menu"></th:block>
+<h2><span th:utext="${message}"></span></h2>
+
+<ul class="menu">
+  <li><h3><a href="index.html">Main page</a></h3></li>
+  <li><h3><a href="current">Допущения</a></h3></li>
+  <li><h3><a href="simple-iteration.html">Метод простых итераций</a></h3></li>
+  <li><a href="random-number.html">Метод случайных чисел</a></li>
+  <li><a href="dixotomia.html">Метод дихотомии</a></li>
+  <li><a href="golden-section.html">Метод золотого сечения</a></li>
+</ul>
+
+</body>
+</html>
