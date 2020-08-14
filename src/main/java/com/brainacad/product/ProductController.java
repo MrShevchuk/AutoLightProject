@@ -13,11 +13,11 @@ import java.util.Map;
 public class ProductController {
 
     ProductRepository productRepository;
-
     @GetMapping("list")
     ModelAndView list() {
         return new ModelAndView("catalog/products/list",
                 Map.of("products", this.productRepository.findAll()),
                 HttpStatus.OK);
     }
+
 }

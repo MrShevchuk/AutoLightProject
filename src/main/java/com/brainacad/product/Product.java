@@ -1,10 +1,28 @@
 package com.brainacad.product;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Product {
 
-    UUID id;
-    String tittle;
-    String description;
+    /**
+     * Идентификатор.
+     */
+    private UUID id;
+
+    /**
+     * Название.
+     */
+    private String title;
+
+    /**
+     * Описание.
+     */
+    private String description;
 }

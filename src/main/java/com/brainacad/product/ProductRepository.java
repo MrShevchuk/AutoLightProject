@@ -9,4 +9,6 @@ public class ProductRepository {
 
     List<Product> findAll() {
         return this.products;
-}}
+    }
+
+}
